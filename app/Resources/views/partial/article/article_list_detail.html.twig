@@ -1,0 +1,9 @@
+{% set article_title = article.q_name ~ '_title' %}
+{% set article_text = article.q_name ~ '_text' %}
+{% set article_image = article.q_name ~ '_min' %}
+
+<article class="article">
+	<h2><strong><a href="{{ path(article.q_name) }}">{{article_title|trans}}</a></strong></h2>
+	<img src="{{ asset('images/articles/' ~ article_image ~ '.jpg') }}" alt="{{article_title|trans}}" width="109px" height="82px" />
+	<p>{{article_text|trans}}</p>
+</article>

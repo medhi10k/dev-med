@@ -1,0 +1,8 @@
+# messages.fr.yml
+Symfony is great: "J'aime Symfony"
+test_title: "Lorem ipsum dolor sit amet, consectetur adipiscing"
+test2_title: "Curabitur sit amet congue diam, id varius lectus"
+test3_title: "Nullam maximus ornare auctor"
+test_text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt tempus efficitur. Vivamus non ornare dolor. Nunc viverra enim in porta mollis. Integer eu ex pellentesque, fermentum ex sit amet, aliquam lectus."
+test2_text: "Curabitur sit amet congue diam, id varius lectus. Nam nisi neque, congue eget magna at, gravida mollis justo. Quisque eleifend facilisis augue, vitae elementum ligula placerat eu. Nunc suscipit elit ac mauris fermentum vestibulum. Ut a semper erat. Nunc facilisis rhoncus aliquam."
+test3_text: "Nullam maximus ornare auctor. Vestibulum finibus ut ligula tristique suscipit. Curabitur rhoncus neque eget risus gravida, at blandit dui vehicula. Nam consectetur malesuada ipsum, luctus vehicula purus vehicula sit amet. Sed varius pulvinar mi, eget fermentum nisi pellentesque id. Vestibulum non semper erat, egestas cursus purus. "

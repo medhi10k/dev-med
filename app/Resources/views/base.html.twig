@@ -2,12 +2,34 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}{% endblock %}</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ asset('css/base.css') }}" >
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <header id="header" class="container-fluid">
+            <section class="row">
+                <section class="col-xs-6 col-md-4">
+                    <a href="/" alt="Dev Med mon site d'expérimentations de développement web">
+                        <img src="{{ asset('images/base/dev-med-logo.png') }}" alt="Logo dev med" width="216px" height="95px" />
+                    </a>
+                </section>
+                <section class="col-xs-12 col-sm-6 col-md-8">
+                    {% block pagetitle %}{% endblock %}
+                    {% block pagesubtitle %}{% endblock %}
+                </section>
+            </section>
+        </header>
+        <main data-role="page" class="container-fluid">
+            {% block body %}{% endblock %}
+        </main>
         {% block javascripts %}{% endblock %}
     </body>
 </html>
