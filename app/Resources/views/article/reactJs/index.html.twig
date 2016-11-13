@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block javascripts_header %}
+    <script src="https://unpkg.com/react@latest/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@latest/dist/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+{% endblock %}
+
+{% block pagetitle %}<h1>{% trans %}reagir_avec_react_js_title{% endtrans %}</h1>{% endblock %}
+{% block pagesubtitle %}<p>{% trans %}reagir_avec_react_js_text{% endtrans %}</p>{% endblock %}
+
+{% block body %}
+    <h2>Mon premier hello world</h2>
+    <p>On commence toujours par le myhique hello world !</p>
+    <div id="reactjs-element-1" class="experimentation-small"></div>
+    <script>
+    	class HelloMessage extends React.Component {
+		  render() {
+		    return React.createElement(
+		      "div",
+		      null,
+		      "Hello ",
+		      this.props.who
+		    );
+		  }
+		}
+		ReactDOM.render(React.createElement(HelloMessage, { who: "World" }), document.getElementById('reactjs-element-1'));
+    </script>
+
+    <h2>Une petite horloge</h2>
+    <p>Pratique pour savoir l'heure non !</p>
+    <div id="reactjs-element-2" class="experimentation-small"></div>
+    <script>
+    	function tick() {
+		  ReactDOM.render(React.createElement(
+		      "span",
+		      null,
+		      new Date().toLocaleTimeString()
+		    ), document.getElementById('reactjs-element-2'));
+		}
+		tick();
+		setInterval(tick, 1000);
+    </script>
+    <script type="text/jsx">
+    function tick() {
+	  const element = (
+	      <span>{new Date().toLocaleTimeString()}</span>
+	  );
+	  ReactDOM.render(
+	    element,
+	    document.getElementById('reactjs-element-2')
+	  );
+	}
+
+	setInterval(tick, 1000);
+    </script>
+{% endblock %}
+
+

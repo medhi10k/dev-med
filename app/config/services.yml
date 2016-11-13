@@ -4,6 +4,9 @@ parameters:
 #    parameter_name: value
 
 services:
+# keep your service names short
+    app.php55experimentation :
+        class: AppBundle\Experimentation\Php55\Php55Experimentation
 #    service_name:
 #        class: AppBundle\Directory\ClassName
 #        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]

@@ -1,0 +1,16 @@
+
+body{width:100%;font-family:Verdana;}
+h1{font-size:25px;}
+h2{font-size:20px;}
+
+header#header{height:110px;margin-top:10px;border-bottom:1px solid #000;}
+header#header,
+main{width:1024px;margin-left:auto;margin-right:auto;}
+
+
+.experimentation-small,
+.experimentation-medium,
+.experimentation-big{border:1px solid #23527c;padding: 10px;color:#fff;background-color:#000;}
+.experimentation-small{width:33%;}
+.experimentation-medium{width:50%;}
+.experimentation-big{width:100%;}

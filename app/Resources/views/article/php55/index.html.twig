@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+
+{% block pagetitle %}<h1>{% trans %}article_title_nouveautes_php_5_5{% endtrans %}</h1>{% endblock %}
+{% block pagesubtitle %}<p>{% trans %}article_text_nouveautes_php_5_5{% endtrans %}</p>{% endblock %}
+
+{% block body %}
+    <h2>Mon premier hello world</h2>
+    <p>On commence toujours par le myhique hello world !</p>
+    <code>
+		<pre>
+	function xrange($start, $limit, $step = 1) {
+		for ($i = $start; $i <= $limit; $i += $step) {
+			yield $i;
+		}
+	}
+
+	echo 'Chiffres impairs simplement : ';
+		</pre>
+    </code>
+    <div id="reactjs-element-1" class="experimentation-small">{{experimentation1()}}</div>
+{% endblock %}
+
+

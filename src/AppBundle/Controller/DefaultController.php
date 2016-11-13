@@ -11,12 +11,25 @@ class DefaultController extends Controller
     /**
      * @Route("/", name="homepage")
      */
-    public function indexAction(Request $request)
+    public function indexAction()
     {   
         $articles = [
-            ['q_name' => 'test'],
-            ['q_name' => 'test2'],
-            ['q_name' => 'test3'],
+            [
+                'q_name' => 'test',
+                'route_name' => 'homepage',
+            ],
+            [
+                'q_name' => 'test2',
+                'route_name' => 'homepage',
+            ],
+            [
+                'q_name' => 'nouveautes_php_5_5',
+                'route_name' => 'nouveautes_php_5_5',
+            ],
+            [
+                'q_name' => 'reagir_avec_react_js',
+                'route_name' => 'reagir_avec_react_js',
+            ],
         ];
         // replace this example code with whatever you need
         return $this->render('default/index.html.twig', [
