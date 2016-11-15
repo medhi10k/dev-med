@@ -15,6 +15,6 @@ class ReactJsController extends Controller
     public function indexAction()
     {
         // replace this example code with whatever you need
-        return $this->render('article/reactjs/index.html.twig');
+        return $this->render('article/reactJs/index.html.twig');
     }
 }
