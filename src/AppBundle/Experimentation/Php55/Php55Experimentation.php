@@ -10,7 +10,7 @@ class Php55Experimentation
 	    }
     }
 
-    public function experimentation1($start, $limit, $step = 1) {
+    public function experimentation2($start, $limit, $step = 1) {
 	    $array = [
 		    [1, 2],
 		    [3, 4],
