@@ -15,6 +15,10 @@ class Php55Controller extends Controller
     public function indexAction()
     {   
         // replace this example code with whatever you need
-        return $this->render('article/php55/index.html.twig', ['experimentation1' => function() {$this->get('app.php55experimentation')->experimentation1(5, 9);}]);
+        return $this->render('article/php55/index.html.twig', [
+        	'experimentation1' => '',
+            'experimentation2' => $this->get('app.php55experimentation')->experimentation2(),
+        	'experimentation3' => $this->get('app.php55experimentation')->experimentation3(),
+        ]);
     }
 }

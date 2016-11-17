@@ -23,12 +23,20 @@ class DefaultController extends Controller
                 'route_name' => 'homepage',
             ],
             [
+                'q_name' => 'reagir_avec_react_js',
+                'route_name' => 'reagir_avec_react_js',
+            ],
+            [
+                'q_name' => 'nouveautes_php_5_6',
+                'route_name' => 'nouveautes_php_5_6',
+            ],
+            [
                 'q_name' => 'nouveautes_php_5_5',
                 'route_name' => 'nouveautes_php_5_5',
             ],
             [
-                'q_name' => 'reagir_avec_react_js',
-                'route_name' => 'reagir_avec_react_js',
+                'q_name' => 'animons_devmec_avec_css3',
+                'route_name' => 'animons_devmec_avec_css3',
             ],
         ];
         // replace this example code with whatever you need

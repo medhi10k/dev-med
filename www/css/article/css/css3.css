@@ -1,0 +1,22 @@
+#hair{
+  position:absolute;
+	top:0px;
+	left:50px;
+	background-color:#000;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 390px;
+	border-radius: 390px;
+	width:100px;
+	height:120px;
+}
+#face{
+  position:absolute;
+	top:15px;
+	left:50px;
+	background-color:#bb8465;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 390px;
+	border-radius: 390px;
+	width:100px;
+	height:120px;
+}

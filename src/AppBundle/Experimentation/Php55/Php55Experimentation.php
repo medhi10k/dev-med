@@ -4,20 +4,40 @@ namespace AppBundle\Experimentation\Php55;
 
 class Php55Experimentation
 {
-    public function experimentation1($start, $limit, $step = 1) {
+    public function experimentation1($start, $limit, $step = 1) 
+    {
 	    for ($i = $start; $i <= $limit; $i += $step) {
 	        yield $i;
 	    }
     }
 
-    public function experimentation2($start, $limit, $step = 1) {
-	    $array = [
-		    [1, 2],
-		    [3, 4],
+    public function experimentation2() 
+    {
+	    $frameworks = [
+		   'php' => ['Symfony', 'Zend'],
+		   'python' => ['Django', 'Pyramid '],
+		   'java' => ['Hibernate', 'Spring'],
 		];
 
-		foreach ($array as list($a, $b)) {
-		    echo "A: $a; B: $b\n";
+		$string = '';
+		foreach ($frameworks as list($first, $second)) {
+		    $string .= '1:' .$first.' - 2:'. $second.'<br \>';
 		}
+
+		return $string;
+    }
+
+    public function experimentation3() 
+    {
+		if (empty($this->isJavaBetterThanPhp())) {
+		    return 'hey oui on le sait tous ^^.';
+		}
+
+		return ';-)';
+    }
+
+    private function isJavaBetterThanPhp() 
+    {
+    	return false;
     }
 }
