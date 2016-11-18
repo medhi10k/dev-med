@@ -15,14 +15,6 @@ class DefaultController extends Controller
     {   
         $articles = [
             [
-                'q_name' => 'test',
-                'route_name' => 'homepage',
-            ],
-            [
-                'q_name' => 'test2',
-                'route_name' => 'homepage',
-            ],
-            [
                 'q_name' => 'reagir_avec_react_js',
                 'route_name' => 'reagir_avec_react_js',
             ],
@@ -35,8 +27,8 @@ class DefaultController extends Controller
                 'route_name' => 'nouveautes_php_5_5',
             ],
             [
-                'q_name' => 'animons_devmec_avec_css3',
-                'route_name' => 'animons_devmec_avec_css3',
+                'q_name' => 'dessinons_devmed_en_css3',
+                'route_name' => 'dessinons_devmed_en_css3',
             ],
         ];
         // replace this example code with whatever you need

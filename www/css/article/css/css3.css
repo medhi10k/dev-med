@@ -1,3 +1,13 @@
+@keyframes pupils-move {
+    0%   {left:9px;}
+    25%  {left:2px;}
+    50%  {left:9px;}
+    75%  {left:15px;}
+    100% {left:9px;}
+}
+#head{
+	position:relative;
+}
 #hair{
   position:absolute;
 	top:0px;
@@ -20,3 +30,57 @@
 	width:100px;
 	height:120px;
 }
+.eyes{
+  position:absolute;
+	top:35px;
+	background-color:#fff;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 390px;
+	border-radius: 390px;
+	width:25px;
+	height:21px;
+}
+#left-eyes{
+  left:12px;
+}
+#right-eyes{
+  left:62px;
+}
+.pupils{
+  position:absolute;
+	top:9px;
+  left:9px;
+	background-color:#000;
+	-ms-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 390px;
+	border-radius: 390px;
+	width:4px;
+	height:4px;
+  animation-name: pupils-move;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+#nose{
+  position:absolute;
+  top:45px;
+  left:41px;
+  font-family:Comic Sans MS;
+  font-size:25px;
+  -ms-transform: rotate(-30deg); /* IE 9 */
+  -webkit-transform: rotate(-30deg); /* Chrome, Safari, Opera */
+  -moz-transform: rotate(-30deg);
+   transform: rotate(-30deg);
+}
+#mouth{
+  position:absolute;
+  top:68px;
+  left:39px;
+  font-family:Comic Sans MS;
+  font-size:35px;
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+  -moz-transform: rotate(-90deg);
+   transform: rotate(-90deg);
+}
+
