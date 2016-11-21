@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}<link rel="stylesheet" href="{{ asset('css/article/angularJs/data_bindons_avec_angular_js.css') }}" >{% endblock %}
+{% block javascripts_header %}
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="{{ asset('js/article/angularJs/data_bindons_avec_angular_js.js') }}"></script>
+{% endblock %}
+{% block pagetitle %}<h1>{% trans %}article_title_data_bindons_avec_angular_js{% endtrans %}</h1>{% endblock %}
+{% block pagesubtitle %}<p>{% trans %}article_text_data_bindons_avec_angular_js{% endtrans %}</p>{% endblock %}
+
+{% block body %}
+{% verbatim %}
+<div ng-app="experimentation">
+  <h2>Une petite horloge</h2>
+  <div ng-controller="ctrl-timer" class="experimentation-small">{{timerClock}}</div>
+
+  <h2>Un petit listing de framework</h2>
+  <div ng-controller="ctrl-listing">
+  <table border="1">
+      <tr>
+        <th ng-click="orderByCustom('name')">Nom</th>
+        <th ng-click="orderByCustom('language')">Langage</th>
+      </tr>
+      <tr ng-repeat="framework in frameworks">
+        <td>{{framework.name}}</td>
+        <td>{{framework.language}}</td>
+      </tr>
+    </table>
+  </div>
+
+  <h2>Un petit jeu</h2>
+  <div id="game" ng-controller="ctrl-game">
+    <div class="score">{{score}}</div>
+    <div ng-repeat="bubble in bubbles" ng-click="removeItem($index)" class="bubble {{bubble.class}}" style="left:{{bubble.leftNumber}}px"></div>
+  </div>
+</div>
+{% endverbatim %}
+{% endblock %}

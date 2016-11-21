@@ -1,20 +1,20 @@
 <?php
 
-namespace AppBundle\Controller\Article\ReactJs;
+namespace AppBundle\Controller\Article\AngularJs;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
 
-class ReactJsController extends Controller
+class AngularJsController extends Controller
 {
     /**
-     * @Route("/reagir-avec-react-js", name="reagir_avec_react_js")
+     * @Route("/data-bindons-avec-angular-js", name="data_bindons_avec_angular_js")
      */
     public function indexAction()
     {
         // replace this example code with whatever you need
-        return $this->render('article/reactJs/index.html.twig');
+        return $this->render('article/angularJs/data_bindons_avec_angular_js.html.twig');
     }
 }

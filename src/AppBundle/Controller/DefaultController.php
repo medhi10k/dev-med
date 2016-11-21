@@ -23,6 +23,10 @@ class DefaultController extends Controller
                 'route_name' => 'nouveautes_php_5_6',
             ],
             [
+                'q_name' => 'data_bindons_avec_angular_js',
+                'route_name' => 'data_bindons_avec_angular_js',
+            ],
+            [
                 'q_name' => 'nouveautes_php_5_5',
                 'route_name' => 'nouveautes_php_5_5',
             ],
@@ -35,29 +39,5 @@ class DefaultController extends Controller
         return $this->render('default/index.html.twig', [
             'articles' => $articles,
         ]);
-    }
-
-    /**
-     * @Route("/", name="test")
-     */
-    public function testAction(Request $request)
-    {   
-       
-    }
-
-    /**
-     * @Route("/", name="test2")
-     */
-    public function test2Action(Request $request)
-    {   
-       
-    }
-
-    /**
-     * @Route("/", name="test3")
-     */
-    public function test3Action(Request $request)
-    {   
-       
     }
 }
