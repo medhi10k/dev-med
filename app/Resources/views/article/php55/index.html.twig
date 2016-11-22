@@ -1,14 +1,15 @@
 {% extends 'base.html.twig' %}
 
-
+{% block stylesheets %}<link rel="stylesheet" href="{{ asset('css/lib/prism.css') }}" >{% endblock %}
+{% block javascripts_header %}  <script src="{{ asset('js/lib/prism.js') }}"></script>{% endblock %}
 {% block pagetitle %}<h1>{% trans %}article_title_nouveautes_php_5_5{% endtrans %}</h1>{% endblock %}
 {% block pagesubtitle %}<p>{% trans %}article_text_nouveautes_php_5_5{% endtrans %}</p>{% endblock %}
 
 {% block body %}
     <h2>Test du yield</h2>
     <p>On commence toujours par le myhique hello world !</p>
-    <code>
-		<pre>
+    <pre>
+        <code class="language-php">
 function xrange($start, $limit, $step = 1) {
     for($i = $start; $i <= $limit; $i += $step) {
         yield $i;
@@ -16,14 +17,14 @@ function xrange($start, $limit, $step = 1) {
 }
 
 echo 'Chiffres impairs simplement : ';
-		</pre>
-    </code>
+		</code>
+    </pre>
     <div class="experimentation-small">{{experimentation1}}</div>
 
     <h2>Test list</h2>
     <p>On commence toujours par le myhique hello world !</p>
-    <code>
-		<pre>
+    <pre>
+        <code class="language-php">
 $frameworks = [
     'php' => ['Symfony', 'Zend'],
     'python' => ['Django', 'Pyramid '],
@@ -36,14 +37,14 @@ foreach ($frameworks as list($first, $second)) {
 }
 
 echo $string;
-		</pre>
-    </code>
+		</code>
+    </pre>
     <div class="experimentation-small">{% autoescape false %}{{experimentation2}}{% endautoescape %}</div>
 
     <h2>Test</h2>
     <p>On commence toujours par le myhique hello world !</p>
-    <code>
-    	<pre>
+    <pre>
+        <code class="language-php">
 class BetterThan {
 	public function javaVsPhp() 
 	{
@@ -62,8 +63,8 @@ class BetterThan {
 
 $betterThan = new BetterThan();
 echo $betterThan->javaVsPhp();
-    	</pre>
-    </code>
+    	</code>
+    </pre>
 
     <div class="experimentation-small">{{experimentation3}}</div>
 {% endblock %}
