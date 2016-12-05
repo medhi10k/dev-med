@@ -3,7 +3,7 @@
  {% block stylesheets %}<link rel="stylesheet" href="{{ asset('css/home.css') }}" >{% endblock %}
 
 {% block pagetitle %}<h1>Bienvenue sur Dev MED</h1>{% endblock %}
-{% block pagesubtitle %}<p>Sur Dev MED vous trouverez mes expérimentations diverses et variées. Que se soit du PHP, du Javascript, de l’HTML ou une toute autre technologie, je compte bien y toucher :-).</p>{% endblock %}
+{% block pagesubtitle %}<p>Sur Dev MED est mon labo à ciel ouvert. Expérimentations PHP, Javascript, HTML, CSS ou toute autre technologie, sont au programme :-).</p>{% endblock %}
 
 {% block body %}
     {{ include('partial/article/article_list.html.twig', { 'articles': articles }) }}

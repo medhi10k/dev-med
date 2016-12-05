@@ -30,6 +30,8 @@ app.controller('ctrl-game', function($scope, $interval) {
 
 	var pointByBubble = 10;
 	var intervalMilisecondBubble = 1000;
+	//TODO rajouter un timeout pour chaque bulle qui supprime la bulle
+	//TODO stocker les timeout dans un tableau au même index pour killer le timeout  avant de killer la bulle 
 
 	$scope.score = 0;
 	$scope.bubbles = [];
