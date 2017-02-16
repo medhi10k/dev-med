@@ -19,7 +19,7 @@
             <section class="row">
                 <section class="col-xs-6 col-md-4">
                     <a href="/" alt="Dev Med mon site d'expérimentations de développement web">
-                        <img src="{{ asset('images/base/dev-med-logo.png') }}" alt="Logo dev med" width="216px" height="95px" />
+                        <img src="{{ asset('images/base/dev-med-logo.png') }}" alt="Logo dev med" width="216px" height="85px" />
                     </a>
                 </section>
                 <section class="col-xs-12 col-sm-6 col-md-8">
@@ -28,8 +28,10 @@
                 </section>
             </section>
         </header>
-        <main data-role="page" class="container-fluid">
-            {% block body %}{% endblock %}
+        <main data-role="page">
+            <section class="container-fluid">
+                {% block body %}{% endblock %}
+            </section>
         </main>
         {% block javascripts_footer %}{% endblock %}
     </body>

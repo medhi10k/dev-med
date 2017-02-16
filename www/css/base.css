@@ -1,10 +1,14 @@
 
 body{width:100%;font-family:Verdana;}
 h1{font-size:25px;}
+pre{width:100%;}
 
-header#header{height:110px;margin-top:10px;border-bottom:1px solid #000;}
+header#header{background-color:#053e55;color:#fff;border-bottom:1px solid #000;}
 header#header,
-main{width:1024px;margin-left:auto;margin-right:auto;}
+main{width:100%;}
+header#header .row{height:120px;margin-top:20px;}
+header#header .row,
+main .container-fluid{width:1024px;margin-left:auto;margin-right:auto;}
 
 
 .experimentation-small,
@@ -13,3 +17,15 @@ main{width:1024px;margin-left:auto;margin-right:auto;}
 .experimentation-small{width:33%;}
 .experimentation-medium{width:50%;}
 .experimentation-big{width:100%;}
+
+@media (max-width: 1024px) {
+	header#header .row{height:auto;}
+	header#header .row,
+	main .container-fluid{width:auto;}
+}
+
+@media (max-width: 450px) {
+	header#header .row{height:auto;}
+	header#header .row,
+	main .container-fluid{width:auto;}
+}
