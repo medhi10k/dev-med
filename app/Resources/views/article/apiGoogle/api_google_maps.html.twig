@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+{% block pagetitle %}<h1>{% trans %}article_title_api_google_maps{% endtrans %}</h1>{% endblock %}
+{% block pagesubtitle %}<p>{% trans %}article_text_api_google_maps{% endtrans %}</p>{% endblock %}
+{% block javascripts_header %}
+  <script src="{{ asset('js/article/apiGoogle/api_google_maps.js') }}"></script>
+{% endblock %}
+{% block body %}
+<h2>Api google maps</h2>
+<div>
+  <div id="locationField">
+    <input id="autocomplete" placeholder="Enter your address" onFocus="geolocate()" type="text"></input>
+  </div>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBgckjniZz5UHNJPz1BhTEyjJTdholXdk&libraries=places&callback=initAutocomplete" async defer></script>
+{% block javascripts_footer %}{% endblock %}
+{% endblock %}

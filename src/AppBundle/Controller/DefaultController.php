@@ -31,6 +31,10 @@ class DefaultController extends Controller
                 'route_name' => 'nouveautes_php_5_5',
             ],
             [
+                'q_name' => 'api_google_maps',
+                'route_name' => 'api_google_maps',
+            ],
+            [
                 'q_name' => 'dessinons_devmed_en_css3',
                 'route_name' => 'dessinons_devmed_en_css3',
             ],
